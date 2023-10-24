@@ -56,6 +56,15 @@ header h2 {
     border-bottom: solid 4px #8c00ffaf;
 }
 
+#home {
+    color:#02a802;
+    padding: 1em;
+    margin-bottom: 0em;
+    text-align: center;
+    border-bottom: solid 4px #8c00ffaf;
+    
+}
+
 
 /* the styles for the navigation menu */
 
@@ -164,7 +173,7 @@ header h2 {
     margin: 2em 5%;
 }
 
-.Portfolio .exp {
+ .exp {
     padding-left: 1em;
     padding-right: 1em;
     line-height: 180%;
@@ -172,7 +181,7 @@ header h2 {
     background-color: rgba(184, 181, 181, 0.418);
 }
 
-.Portfolio .header {
+.exp .header {
     text-align: center;
 }
 
