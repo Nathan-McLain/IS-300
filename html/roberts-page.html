@@ -10,13 +10,31 @@
     <link rel="stylesheet" href="../CSS/styles.css">
     <style>
         /* Your existing styles go here */
+  <style>
+    /* Your existing styles go here */
+
+    /* New styles for the header */
+    header {
+        background-color: blue;
+        color: white;
+        text-align: center;
+        padding: 10px; /* Add padding for better visual appearance */
+    }
+
+    header h1 {
+        color: white; /* Set the text color of h1 to white */
+    }
+</style>
+
     </style>
 </head>
 
 <body class="Portfolio">
+    
     <header>
+        
         <div>
-            <h1>Professional Resume</h1>
+            <h1>Robert's Portofolio</h1>
         </div>
         <center>
             <div><h1>Robert Serembe</h1></div>
@@ -66,14 +84,19 @@
             
         </section>
 
-        <section class="exp">
-            <h2 class="header"> Entering the Information systems program</h2>
-            <p>
-               I have taken computer-based classes before taking information systems classes, but they were more math and physics based not application based. After taking my first CIS class, I felt like I was finally doing something that related to my degree and not just another intense math class. In the first few weeks of class, I began to enjoy working with operating systems, and learning new things. There was a whole other side of operating systems that I had never experienced before, and I found it fun to explore using Linux-based operating systems. It required knowledge of shorthand commands, proper ordering, and careful thought before you enter commands into the terminal. This is because one typo or incorrect syntax can cause unintended consequences such as deleting files or even corrupting the operating system itself. Enjoying what you do can not only be fun, but also increase productivity and have positive effects on your mental health. I worked full time while taking classes at Olympic College and I was stressed and didn’t perform to the best of my ability. I felt like I was taking two steps back for every step forward. Once I started taking classes I enjoyed, I started feeling less stressed, brought my grades back up, and started producing quality work in my assignments and at my Job. I am learning to identify the aspects of tasks that I enjoy or don't mind doing and focus on them to reduce stress and improve my performance. This has also helped me be more positive even when I don’t want to do something to create a positive work environment. Learning networking concepts has shown me that I enjoy understanding how networking systems work. Understanding the backbone of the network has helped me see how the larger world is interconnected, and how to break down complex systems into smaller parts to better understand how they work together. In networking, there is a lot of problem solving, and working together to find a solution that will not negatively impact the rest of your clients. I learned creative problem-solving techniques such as identifying the issue, troubleshooting, applying temporary fixes, monitoring client impact, and implementing permanent solutions without disrupting productivity or taking the network down. Not every problem is the same, taking this class helped me fine tune my problem-solving skills.
-            </p>
+        <section class="exp"> 
+            <h1>Guess the Number Game</h1>
+            <p>Guess a number between 1 and 10</p>
+            <input type="number" id="guessInput" min="1" max="10">
+            <button onclick="checkGuess()">Submit Guess</button>
+            <p id="message"></p>
+        
+            <script src="robert.js"></script>
         </section>
+    </section>
 
-        <a href="#top">Back to Top</a>
+    <a href="#top">Back to Top</a>
+    <section>
     </main>
 
     <footer>

@@ -5,11 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        /* Your existing styles go here */
+    
+        /* New styles for the header */
+        header {
+            background-color: blue;
+            color: white;
+            text-align: center;
+            padding: 10px; /* Add padding for better visual appearance */
+        }
+    
+        header h1 {
+            color: white; /* Set the text color of h1 to white */
+        }
+    </style>
+    
+        </style>
     <title>Cyber Wizards Portfolio Website</title>
 </head>
 
 <body>
-    <nav id="mobile_menu"></nav>
+    <header>
+        <h1 id="home"> Cyber Wizards</h1>
+    </header>
+
     <nav id="nav_menu">
         <ul>
             <li><a href="../Html/index.html"><i class="fa-solid fa-house"></i> Home</a></li>
@@ -20,29 +40,42 @@
         </ul>
     </nav>
 
-    <header>
-        <h2> Home Page </h2>
-        <h1 id="home"> Cyber Wizards</h1>
-    </header>
     <main>
         <section class="exp">
             <h2 class="header"> About US</h2>
 
             <p>
-                We are the Cyber Wizards, a small group of students in the BAS-IS program at Olympic college. 
-                
+                We are the Cyber Wizards, a small group of students in the BAS-IS program at Olympic college.
+
             </p>
+
         </section>
-
-
 
         <section class="exp">
             <h2 class="header"> Updates</h2>
 
             <p>
-                Here is where we will provide any updates to our website and any other new information we would like to add. 
-                
+                Here is where we will provide any updates to our website and any other new information we would like to add.
+
             </p>
+        </section add="buutons">
+            <div id="buttonContainer">
+                <button onclick="checkMember()">Check Group Membership</button>
+            </div>
+
+            <script>
+                function checkMember() {
+                    const groupName = prompt("Enter a name to check if it's a group member:");
+                    const groupMembers = ['Zack', 'Nathan', 'Robert'];
+
+                    if (groupMembers.includes(groupName)) {
+                        alert('Correct, this is a group member!');
+                    } else {
+                        alert('Wrong, not a member!');
+                    }
+                }
+            </script>
+</section>
         </section>
     </main>
 </body>
