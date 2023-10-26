@@ -73,6 +73,29 @@
             </p>
         </section>
 
+        <section>
+
+            <h1>Count: <span id="count">0</span></h1>
+            <button id="countButton">Click to Count Up</button>
+
+        </section>
+
+        <script>
+
+             // Get references to the button and the count display element
+    const countButton = document.getElementById("countButton");
+    const countDisplay = document.getElementById("count");
+
+    let count = 0; // Initialize the count
+
+    // Add a click event listener to the button
+    countButton.addEventListener("dblclick", () => {
+      count++; // Increment the count
+      countDisplay.textContent = count * 3; // Update the count display
+    });
+
+        </script>
+
         <a href="#top">Back to Top</a>
 
     </main>
