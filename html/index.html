@@ -5,6 +5,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        /* Your existing CSS styles here */
+
+        .rocket {
+            position: absolute;
+            width: 50px;
+            height: 100px;
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+            animation: rocketMovement 5s linear infinite alternate;
+        }
+
+        #rocket1 {
+            left: 20%;
+            bottom: 0;
+            background-color: #3498db;
+        }
+
+        #rocket2 {
+            left: 50%;
+            bottom: 0;
+            background-color: #e74c3c;
+        }
+
+        #rocket3 {
+            left: 80%;
+            bottom: 0;
+            background-color: #2ecc71;
+        }
+
+        @keyframes rocketMovement {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-100vh);
+            }
+        }
+    </style>
     <script src="https://kit.fontawesome.com/d8e8753e8d.js" crossorigin="anonymous"></script>
     <title>Cyber Wizards Portfolio Website</title>
 </head>
@@ -29,12 +67,7 @@
     <main>
         <section class="exp">
             <h2 class="header"> About US</h2>
-
-            <p>
-                We are the Cyber Wizards, a small group of students in the BAS-IS program at Olympic college.
-
-            </p>
-
+            <p>We are the Cyber Wizards, a small group of students in the BAS-IS program at Olympic college.</p>
         </section>
 
         <section class="exp">
@@ -42,6 +75,9 @@
             <div id="buttonContainer">
                 <button onclick="checkMember()">Check Group Membership</button>
             </div>
+            <div id="rocket1" class="rocket"></div>
+            <div id="rocket2" class="rocket"></div>
+            <div id="rocket3" class="rocket"></div>
 
             <script>
                 function checkMember() {
@@ -55,8 +91,6 @@
                     }
                 }
             </script>
-  
-           
         </section>
     </main>
 </body>
