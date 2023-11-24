@@ -1,111 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="cw-styles.css" />
+    <style></style>
+    <script
+      src="https://kit.fontawesome.com/d8e8753e8d.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Cyber Wizards Portfolio Website</title>
+  </head>
 
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="../css/styles.css">
-<link rel="stylesheet" type="text/css" href="cw-styles.css">
-<style>
-/* Your existing CSS styles here */
+  <body>
+    <header>
+      <h2>Home Page</h2>
+      <h1 id="home">Cyber Wizards</h1>
+    </header>
 
-.rocket {
-    position: absolute;
-    width: 50px;
-    height: 100px;
-    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-    animation: rocketMovement 5s linear infinite alternate;
-}
+    <nav id="mobile_menu"></nav>
+    <nav id="nav_menu">
+      <ul>
+        <li>
+          <a href="../Html/index.html"
+            ><i class="fa-solid fa-house"></i> Home</a
+          >
+        </li>
+        <li><a href="../Html/nathans-page.html"> Nathan</a></li>
+        <li><a href="../Html/zacks-page.html"> Zack</a></li>
+        <li><a href="../Html/roberts-page.html"> Robert</a></li>
+        <li>
+          <a href="#"
+            ><i class="fa-regular fa-address-book"></i> Contact information</a
+          >
+        </li>
+      </ul>
+    </nav>
 
-#rocket1 {
-    left: 20%;
-    bottom: 0;
-    background-color: #3498db;
-}
-
-#rocket2 {
-    left: 50%;
-    bottom: 0;
-    background-color: #e74c3c;
-}
-
-#rocket3 {
-    left: 80%;
-    bottom: 0;
-    background-color: #2ecc71;
-}
-
-@keyframes rocketMovement {
-    0% {
-        transform: translateY(0);
-    }
-    100% {
-        transform: translateY(-100vh);
-    }
-}
-</style>
-<script src="https://kit.fontawesome.com/d8e8753e8d.js" crossorigin="anonymous"></script>
-<title>Cyber Wizards Portfolio Website</title>
-</head>
-
-<body>
-<header>
-<h2> Home Page </h2>
-<h1 id="home"> Cyber Wizards</h1>
-</header>
-
-<nav id="mobile_menu"></nav>
-<nav id="nav_menu">
-<ul>
-    <li><a href="../Html/index.html"><i class="fa-solid fa-house"></i> Home</a></li>
-    <li><a href="../Html/nathans-page.html"> Nathan</a></li>
-    <li><a href="../Html/zacks-page.html"> Zack</a></li>
-    <li><a href="../Html/roberts-page.html"> Robert</a></li>
-    <li><a href="#"><i class="fa-regular fa-address-book"></i> Contact information</a></li>
-</ul>
-</nav>
-
-<main>
-<section class="exp">
-    <h2 class="header"> About US</h2>
-    <p>We are the Cyber Wizards, a small group of students in the BAS-IS program at Olympic college.</p>
-</section>
-<section class="exp">
-    <h2 class="header">Enter Your Name</h2>
-    <div id="buttonContainer">
-        <button onclick="checkMember()">Check Group Membership</button>
-    </div>
-    <div id="rocket1" class="rocket"></div>
-    <div id="rocket2" class="rocket"></div>
-    <div id="rocket3" class="rocket"></div>
-
-    <script>
-        function checkMember() {
-            const groupName = prompt("Enter a name to check if it's a group member:");
-            const groupMembers = ['Zack', 'Nathan', 'Robert'];
+    <main>
+      <section class="exp">
+        <h2 class="header">About US</h2>
+        <p>
+          We are the Cyber Wizards, a small group of students in the BAS-IS
+          program at Olympic college.
+        </p>
+      </section>
+      <section class="exp">
+        <h2 class="header">Verify Group Members</h2>
+        <div id="buttonContainer">
+          <button onclick="checkMember()">Check Group Membership</button>
+        </div>
+        <div id="rocket1" class="rocket"></div>
+        <div id="rocket2" class="rocket"></div>
+        <div id="rocket3" class="rocket"></div>
+        <script>
+          function checkMember() {
+            const groupName = prompt(
+              "Enter a name to check if it's a group member:"
+            );
+            const groupMembers = ["Zack", "Nathan", "Robert"];
 
             if (groupMembers.includes(groupName)) {
-                alert('Correct, this is a group member!');
+              alert("Correct, this is a group member!");
             } else {
-                alert('Wrong, not a member!');
+              alert("Wrong, not a member!");
             }
-        }
-    </script>
-</section>
-<section>
-<!-- Container for centering -->
-<div class="center-container">
-<!-- Button element -->
-<button id="cyberWizardsBtn">Cyber Wizards</button>
-</div>
+          }
+        </script>
+      </section>
+      <section class="exp">
+        <!-- Container for centering -->
+        <div class="center-container">
+          <!-- Button element -->
+          <button id="cyberWizardsBtn">Cyber Wizards Project<a href="file:///C:/path/to/your/project/index.html"><i class="fa-solid fa-project"></i></a></button>
+          <!-- Add this within the <nav_menu> or any appropriate section -->
+        </div>
 
-<script src="cw-script.js"></script>
-
-
-</section>
-
-
-</main>
-</body>
-
+        <script src="cw-script.js"></script>
+      </section>
+    </main>
+  </body>
 </html>

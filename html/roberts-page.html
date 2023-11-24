@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project Portfolio by Robert</title>
-    <link rel="stylesheet" href="../Js/jquery.slicknav.min.js">
-    <link rel="stylesheet" href="../CSS/styles.css">
-    <script src="https://kit.fontawesome.com/d8e8753e8d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../Js/jquery.slicknav.min.js" />
+    <link rel="stylesheet" href="../CSS/styles.css" />
+    <link rel="stylesheet" href="robert-tic.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="robertapp.css" />
+    <script
+      src="https://kit.fontawesome.com/d8e8753e8d.js"
+      crossorigin="anonymous"
+    ></script>
     <style>
-        /* Your existing styles go here */
-  <style>
+      /* Your existing styles go here */
+      style>
     /* Your existing styles go here */
 
     /* New styles for the header */
@@ -20,89 +25,182 @@
         color: white;
         text-align: center;
         padding: 10px; /* Add padding for better visual appearance */
-    }
+      }
 
-    header h1 {
+      header h1 {
         color: white; /* Set the text color of h1 to white */
-    }
-</style>
-
+      }
     </style>
-</head>
+  </head>
 
-<body class="Portfolio">
-    
+  <body class="Portfolio">
     <header>
-        
-        <div>
-            <h1>Robert's Portofolio</h1>
-        </div>
-        <center>
-            <div><h1>Robert Serembe</h1></div>
-        </center>
-        <nav id="mobile_menu"></nav>
-        <nav id="nav_menu">
-            <ul>
-                <li><a href="../Html/index.html"><i class="fa-solid fa-house"></i> Home</a></li>
-                <li><a href="../Html/nathans-page.html"> Nathan</a></li>
-                <li><a href="../Html/zacks-page.html"> Zack</a></li>
-                <li><a href="../Html/roberts-page.html"><i class="fa-regular fa-folder-open"></i> Robert</a></li>
-                <li><a href="#"><i class="fa-regular fa-address-book"></i> Contact information</a></li>
-            </ul>
-        </nav>
+      <h1>Robert's Portofolio</h1>
+      <center><h1 id="Robert">Robert Serembe</h1></center>
+      <nav id="mobile_menu"></nav>
+
+      <nav id="nav_menu">
+        <ul>
+          <li>
+            <a href="../Html/index.html"
+              ><i class="fa-solid fa-house"></i> Home</a
+            >
+          </li>
+          <li><a href="../Html/nathans-page.html"> Nathan</a></li>
+          <li><a href="../Html/zacks-page.html"> Zack</a></li>
+          <li>
+            <a href="../Html/roberts-page.html">
+              <i class="fa-regular fa-folder-open"></i>Robert</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa-regular fa-address-book"></i> Contact information</a
+            >
+          </li>
+        </ul>
+      </nav>
     </header>
-
-    <main>
-        <section class="exp">
-            <h2 class="header"> Why the Portfolio?</h2>
-            
-                <ol>
-                    <li><b>Showcasing What I'm Good At:</b>
-
-                        My portfolio helps me show off the things I'm good at in managing projects. It's like sharing my skills and the things I've done well.</li>
-                    <li><b>Proving I Can Handle Projects:</b>
-
-                        I use my portfolio to prove that I'm good at handling projects. It's like showing proof that I've done a good job in the past.</li>
-                    <li><b>Looking More Trustworthy:</b>
-
-                        When I have a well-organized portfolio, it makes me look more trustworthy. It's like having proof that I know what I'm doing.</li>
-                    <li><b>Getting Better Jobs:</b>
-
-                        If I want to get a better job in project management, having a portfolio helps. It's like showing off my best work when I'm applying for a new job or a promotion.</li>
-                    <li><b>Standing Out From Others:</b>
-
-                        In a job competition, having a portfolio makes me stand out. It's like saying, "Look, I've got the experience and skills you're looking for."</li>
-                    <li><b>Building My Reputation:</b>
-
-                        My portfolio helps build my reputation as a project manager. It's like creating a brand for myself, showing what makes me special.</li>
-                    <li><b>Showing My Progress:</b>
-
-                        Over time, my portfolio becomes a record of how I've grown in my career. It's like a timeline of my achievements and how I've gotten better at my job.</li>
-                    <li><b>Connecting With Others:</b>
-
-                        Sharing my portfolio is a good way to connect with others. It's like giving people a quick way to see what I'm all about and what I've done.</li>
-                </ol>
-            
-        </section>
-
-        <section class="exp"> 
-            <h1>Guess the Number Game</h1>
-            <p>Guess a number between 1 and 10</p>
-            <input type="number" id="guessInput" min="1" max="10">
-            <button onclick="checkGuess()">Submit Guess</button>
-            <p id="message"></p>
-        
-            <script src="robert.js"></script>
-        </section>
+    <section>
+      <nav id="nav_menu">
+        <ul>
+          <li><a href="#portfolio-section">Why the Portfolio?</a></li>
+          <li><a href="#guess-game-section">Guess the Number</a></li>
+          <li><a href="#tic-tac-toe-section">Tic Tac Toe</a></li>
+          <li><a href="#Financial-section">FinApp</a></li>
+        </ul>
+      </nav>
     </section>
 
-    <a href="#top">Back to Top</a>
-    <section>
+    <main>
+      <section class="exp" id="portfolio-section">
+        <h2 class="header">Why the Portfolio?</h2>
+
+        <ol>
+          <li>
+            <b>Showcasing What I'm Good At:</b>
+
+            My portfolio helps me show off the things I'm good at in managing
+            projects. It's like sharing my skills and the things I've done well.
+          </li>
+          <li>
+            <b>Proving I Can Handle Projects:</b>
+
+            I use my portfolio to prove that I'm good at handling projects. It's
+            like showing proof that I've done a good job in the past.
+          </li>
+          <li>
+            <b>Looking More Trustworthy:</b>
+
+            When I have a well-organized portfolio, it makes me look more
+            trustworthy. It's like having proof that I know what I'm doing.
+          </li>
+          <li>
+            <b>Getting Better Jobs:</b>
+
+            If I want to get a better job in project management, having a
+            portfolio helps. It's like showing off my best work when I'm
+            applying for a new job or a promotion.
+          </li>
+          <li>
+            <b>Standing Out From Others:</b>
+
+            In a job competition, having a portfolio makes me stand out. It's
+            like saying, "Look, I've got the experience and skills you're
+            looking for."
+          </li>
+          <li>
+            <b>Building My Reputation:</b>
+
+            My portfolio helps build my reputation as a project manager. It's
+            like creating a brand for myself, showing what makes me special.
+          </li>
+          <li>
+            <b>Showing My Progress:</b>
+
+            Over time, my portfolio becomes a record of how I've grown in my
+            career. It's like a timeline of my achievements and how I've gotten
+            better at my job.
+          </li>
+          <li>
+            <b>Connecting With Others:</b>
+
+            Sharing my portfolio is a good way to connect with others. It's like
+            giving people a quick way to see what I'm all about and what I've
+            done.
+          </li>
+        </ol>
+      </section>
+
+      <section>
+        <section class="exp" id="Financial-section">
+          <h1>FinApp</h1>
+          <div class="container">
+            <h1>Student Payments Tracker</h1>
+            <form id="paymentForm">
+              <label for="studentName">Student Name:</label>
+              <select id="studentName">
+                <!-- List of predefined student names -->
+                <option value="Emily Johnson">Emily Johnson</option>
+                <option value="Tom Stevens">Tom Stevens</option>
+                <option value="Fred Johnson">Fred Johnson</option>
+                <option value="D Trum">D Trum</option>
+                <option value="Fred Jayson">Fred Jayson</option>
+                <option value="Jonathan Spencer">Jonathan Spencern</option>
+                <!-- Add more options as needed -->
+              </select>
+              <label for="paymentAmount">Payment Amount:</label>
+              <input type="number" id="paymentAmount" required />
+
+              <button type="button" onclick="recordPayment()">
+                Record Payment
+              </button>
+              <!-- Add this button in the Financial section of your HTML -->
+              <button onclick="enableInputForNewStudent()">
+                Input Another Student
+              </button>
+
+              <script>
+                // Add this function in your app.js script
+                function enableInputForNewStudent() {
+                  // Enable the input fields for a new student
+                  document.getElementById("studentName").disabled = false;
+                  document.getElementById("paymentAmount").disabled = false;
+                }
+              </script>
+            </form>
+
+            <div id="paymentHistory">
+              <!-- Payment history will be displayed here -->
+            </div>
+          </div>
+          <script src="app.js"></script>
+        </section>
+
+        <section class="exp" id="guess-game-section">
+          <h1>Guess the Number Game</h1>
+          <p>Guess a number between 1 and 10</p>
+          <input type="number" id="guessInput" min="1" max="10" />
+          <button onclick="checkGuess()">Submit Guess</button>
+          <p id="message"></p>
+
+          <script src="robert.js"></script>
+        </section>
+        <section class="exp" id="tic-tac-toe-section">
+          <div class="container">
+            <h1>Tic Tac Toe</h1>
+            <div id="board" class="board"></div>
+            <div id="status" class="status">Player X's turn</div>
+          </div>
+          <script src="robert-tictac.js"></script>
+        </section>
+        <section>
+          <a href="#top">Back to Top</a>
+          <section>
+            <footer>&copy; Robert's-Page 2023</footer>
+          </section>
+        </section>
+      </section>
     </main>
-
-    <footer>
-        &copy; Robert's-Page 2023
-    </footer>
-</body>
-
+  </body>
 </html>

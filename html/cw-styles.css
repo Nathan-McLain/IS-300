@@ -1,24 +1,66 @@
 /* Style for the centering container */
 .center-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Style for the button with rounded corners */
+#cyberWizardsBtn {
+  padding: 100px 150px; /* Larger padding for a larger button */
+  font-size: 100px; /* Larger font size */
+  color: #fff;
+  border: none;
+  border-radius: 20px; /* Adjust the border-radius for rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+/* Glow effect on hover */
+#cyberWizardsBtn:hover {
+  box-shadow: 0 0 10px #3498db;
+}
+/* Your existing CSS styles here */
+
+.rocket {
+  position: absolute;
+  width: 50px;
+  height: 100px;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  animation: rocketMovement 5s linear infinite alternate;
+}
+
+#rocket1 {
+  left: 20%;
+  bottom: 0;
+  background-color: #3498db;
+}
+
+#rocket2 {
+  left: 50%;
+  bottom: 0;
+  background-color: #e74c3c;
+}
+
+#rocket3 {
+  left: 80%;
+  bottom: 0;
+  background-color: #2ecc71;
+}
+/* Add this within your existing styles or create a new CSS file */
+.fa-project::before {
+  content: "\f15b"; /* Unicode for an appropriate icon */
+  font-family: 'Font Awesome 5 Free';
+  margin-right: 5px;
+}
+
+
+@keyframes rocketMovement {
+  0% {
+    transform: translateY(0);
   }
-  
-  /* Style for the button with rounded corners */
-  #cyberWizardsBtn {
-    padding: 150px 200px; /* Larger padding for a larger button */
-    font-size: 100px; /* Larger font size */
-    color: #fff;
-    border: none;
-    border-radius: 20px; /* Adjust the border-radius for rounded corners */
-    cursor: pointer;
-    transition: background-color 0.3s, box-shadow 0.3s;
+  100% {
+    transform: translateY(-100vh);
   }
-  
-  /* Glow effect on hover */
-  #cyberWizardsBtn:hover {
-    box-shadow: 0 0 10px #3498db;
-  }
-  
+}
