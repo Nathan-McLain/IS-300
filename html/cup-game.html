@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        .game-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.cup {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #0a06f7;
+    text-align: center;
+    line-height: 100px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+}
+
+    </style>
+<head>
+    <title>Guess the Ball Game</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Guess the Ball Game</h1>
+    <div class="game-container">
+        <div class="cup" id="cup1"><img src="../images/ball.png"></div>
+        <div class="cup" id="cup2"><img src="../images/ball.png"></div>
+        <div class="cup" id="cup3"><img src="../images/ball.png"></div>
+    </div>
+    <button id="shuffle-btn">Shuffle Cups</button>
+    <div id="message"></div>
+    <script src="script.js"></script>
+
+</body>
+<script>
+const cups = document.querySelectorAll('.cup');
+const shuffleButton = document.getElementById('shuffle-btn');
+const message = document.getElementById('message');
+let ballPosition;
+
+function shuffleCups() {
+    // Randomly select a cup to hide the ball
+    ballPosition = Math.floor(Math.random() * 3);
+
+    // Shuffle the cups by changing their order in the DOM
+    const cupOrder = [0, 1, 2].sort(() => Math.random() - 0.5);
+    cups.forEach((cup, index) => {
+        cup.style.order = cupOrder[index];
+        cup.textContent = ''; // Clear the cup's content
+        cup.addEventListener('click', revealCup); // Add click event listener
+    });
+
+    message.textContent = 'Guess which cup the ball is under!';
+}
+
+function revealCup(event) {
+    const selectedCup = event.target;
+    const selectedCupPosition = Array.from(cups).indexOf(selectedCup);
+
+    if (selectedCupPosition === ballPosition) {
+        selectedCup.innerHTML = '<img src="../images/ball.png" width="80px" height="80px">'; // Reveal the ball
+        message.textContent = 'Congratulations! You found the ball!';
+    } else {
+        selectedCup.textContent = 'Empty'; // Reveal an empty cup
+        message.textContent = 'Sorry, try again!';
+    }
+
+    // Remove click event listeners from all cups to prevent further clicks
+    cups.forEach(cup => cup.removeEventListener('click', revealCup));
+}
+
+shuffleButton.addEventListener('click', shuffleCups);
+
+// Initial shuffle
+shuffleCups();
+
+
+</script>
+
+</html>
