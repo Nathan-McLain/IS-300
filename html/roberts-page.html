@@ -1,85 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project Portfolio by Robert</title>
-    <link rel="stylesheet" href="../Js/jquery.slicknav.min.js">
-    <link rel="stylesheet" href="../CSS/styles.css">
-    <script src="https://kit.fontawesome.com/d8e8753e8d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../Js/jquery.slicknav.min.js" />
+    <link rel="stylesheet" href="../CSS/styles.css" />
+    <link rel="stylesheet" href="robert-tic.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="robertapp.css" />
+    <script
+      src="https://kit.fontawesome.com/d8e8753e8d.js"
+      crossorigin="anonymous"
+    ></script>
     <style>
-        /* Your existing styles go here */
-    </style>
-</head>
+      /* Your existing styles go here */
+      style>
+    /* Your existing styles go here */
 
-<body class="Portfolio">
+    /* New styles for the header */
+    header {
+        background-color: blue;
+        color: white;
+        text-align: center;
+        padding: 10px; /* Add padding for better visual appearance */
+      }
+
+      header h1 {
+        color: white; /* Set the text color of h1 to white */
+      }
+    </style>
+  </head>
+
+  <body class="Portfolio">
     <header>
-        <div>
-            <h1>Professional Resume</h1>
-        </div>
-        <center>
-            <div><h1>Robert Serembe</h1></div>
-        </center>
-        <nav id="mobile_menu"></nav>
-        <nav id="nav_menu">
-            <ul>
-                <li><a href="../Html/index.html"><i class="fa-solid fa-house"></i> Home</a></li>
-                <li><a href="../Html/nathans-page.html"> Nathan</a></li>
-                <li><a href="../Html/zacks-page.html"> Zack</a></li>
-                <li><a href="../Html/roberts-page.html"><i class="fa-regular fa-folder-open"></i> Robert</a></li>
-                <li><a href="#"><i class="fa-regular fa-address-book"></i> Contact information</a></li>
-            </ul>
-        </nav>
+      <h1>Robert's Portofolio</h1>
+      <center><h1 id="Robert">Robert Serembe</h1></center>
+      <nav id="mobile_menu"></nav>
+
+      <nav id="nav_menu">
+        <ul>
+          <li>
+            <a href="../Html/index.html"
+              ><i class="fa-solid fa-house"></i> Home</a
+            >
+          </li>
+          <li><a href="../Html/nathans-page.html"> Nathan</a></li>
+          <li><a href="../Html/zacks-page.html"> Zack</a></li>
+          <li>
+            <a href="../Html/roberts-page.html">
+              <i class="fa-regular fa-folder-open"></i>Robert</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa-regular fa-address-book"></i> Contact information</a
+            >
+          </li>
+        </ul>
+      </nav>
     </header>
+    <section>
+      <nav id="nav_menu">
+        <ul>
+          <li><a href="#portfolio-section">Why the Portfolio?</a></li>
+          <li><a href="#guess-game-section">Guess the Number</a></li>
+          <li><a href="#tic-tac-toe-section">Tic Tac Toe</a></li>
+          <li><a href="#Financial-section">FinApp</a></li>
+        </ul>
+      </nav>
+    </section>
 
     <main>
-        <section class="exp">
-            <h2 class="header"> Why the Portfolio?</h2>
-            
-                <ol>
-                    <li><b>Showcasing What I'm Good At:</b>
+      <section class="exp" id="portfolio-section">
+        <h2 class="header">Why the Portfolio?</h2>
 
-                        My portfolio helps me show off the things I'm good at in managing projects. It's like sharing my skills and the things I've done well.</li>
-                    <li><b>Proving I Can Handle Projects:</b>
+        <ol>
+          <li>
+            <b>Showcasing What I'm Good At:</b>
 
-                        I use my portfolio to prove that I'm good at handling projects. It's like showing proof that I've done a good job in the past.</li>
-                    <li><b>Looking More Trustworthy:</b>
+            My portfolio helps me show off the things I'm good at in managing
+            projects. It's like sharing my skills and the things I've done well.
+          </li>
+          <li>
+            <b>Proving I Can Handle Projects:</b>
 
-                        When I have a well-organized portfolio, it makes me look more trustworthy. It's like having proof that I know what I'm doing.</li>
-                    <li><b>Getting Better Jobs:</b>
+            I use my portfolio to prove that I'm good at handling projects. It's
+            like showing proof that I've done a good job in the past.
+          </li>
+          <li>
+            <b>Looking More Trustworthy:</b>
 
-                        If I want to get a better job in project management, having a portfolio helps. It's like showing off my best work when I'm applying for a new job or a promotion.</li>
-                    <li><b>Standing Out From Others:</b>
+            When I have a well-organized portfolio, it makes me look more
+            trustworthy. It's like having proof that I know what I'm doing.
+          </li>
+          <li>
+            <b>Getting Better Jobs:</b>
 
-                        In a job competition, having a portfolio makes me stand out. It's like saying, "Look, I've got the experience and skills you're looking for."</li>
-                    <li><b>Building My Reputation:</b>
+            If I want to get a better job in project management, having a
+            portfolio helps. It's like showing off my best work when I'm
+            applying for a new job or a promotion.
+          </li>
+          <li>
+            <b>Standing Out From Others:</b>
 
-                        My portfolio helps build my reputation as a project manager. It's like creating a brand for myself, showing what makes me special.</li>
-                    <li><b>Showing My Progress:</b>
+            In a job competition, having a portfolio makes me stand out. It's
+            like saying, "Look, I've got the experience and skills you're
+            looking for."
+          </li>
+          <li>
+            <b>Building My Reputation:</b>
 
-                        Over time, my portfolio becomes a record of how I've grown in my career. It's like a timeline of my achievements and how I've gotten better at my job.</li>
-                    <li><b>Connecting With Others:</b>
+            My portfolio helps build my reputation as a project manager. It's
+            like creating a brand for myself, showing what makes me special.
+          </li>
+          <li>
+            <b>Showing My Progress:</b>
 
-                        Sharing my portfolio is a good way to connect with others. It's like giving people a quick way to see what I'm all about and what I've done.</li>
-                </ol>
-            
+            Over time, my portfolio becomes a record of how I've grown in my
+            career. It's like a timeline of my achievements and how I've gotten
+            better at my job.
+          </li>
+          <li>
+            <b>Connecting With Others:</b>
+
+            Sharing my portfolio is a good way to connect with others. It's like
+            giving people a quick way to see what I'm all about and what I've
+            done.
+          </li>
+        </ol>
+      </section>
+
+      <section>
+        <section class="exp" id="Financial-section">
+          <h1>FinApp</h1>
+          <div class="container">
+            <h1>Student Payments Tracker</h1>
+            <form id="paymentForm">
+              <label for="studentName">Student Name:</label>
+              <select id="studentName">
+                <!-- List of predefined student names -->
+                <option value="Emily Johnson">Emily Johnson</option>
+                <option value="Tom Stevens">Tom Stevens</option>
+                <option value="Fred Johnson">Fred Johnson</option>
+                <option value="D Trum">D Trum</option>
+                <option value="Fred Jayson">Fred Jayson</option>
+                <option value="Jonathan Spencer">Jonathan Spencern</option>
+                <!-- Add more options as needed -->
+              </select>
+              <label for="paymentAmount">Payment Amount:</label>
+              <input type="number" id="paymentAmount" required />
+
+              <button type="button" onclick="recordPayment()">
+                Record Payment
+              </button>
+              <!-- Add this button in the Financial section of your HTML -->
+              <button onclick="enableInputForNewStudent()">
+                Input Another Student
+              </button>
+
+              <script>
+                // Add this function in your app.js script
+                function enableInputForNewStudent() {
+                  // Enable the input fields for a new student
+                  document.getElementById("studentName").disabled = false;
+                  document.getElementById("paymentAmount").disabled = false;
+                }
+              </script>
+            </form>
+
+            <div id="paymentHistory">
+              <!-- Payment history will be displayed here -->
+            </div>
+          </div>
+          <script src="app.js"></script>
         </section>
 
-        <section class="exp">
-            <h2 class="header"> Entering the Information systems program</h2>
-            <p>
-               I have taken computer-based classes before taking information systems classes, but they were more math and physics based not application based. After taking my first CIS class, I felt like I was finally doing something that related to my degree and not just another intense math class. In the first few weeks of class, I began to enjoy working with operating systems, and learning new things. There was a whole other side of operating systems that I had never experienced before, and I found it fun to explore using Linux-based operating systems. It required knowledge of shorthand commands, proper ordering, and careful thought before you enter commands into the terminal. This is because one typo or incorrect syntax can cause unintended consequences such as deleting files or even corrupting the operating system itself. Enjoying what you do can not only be fun, but also increase productivity and have positive effects on your mental health. I worked full time while taking classes at Olympic College and I was stressed and didn’t perform to the best of my ability. I felt like I was taking two steps back for every step forward. Once I started taking classes I enjoyed, I started feeling less stressed, brought my grades back up, and started producing quality work in my assignments and at my Job. I am learning to identify the aspects of tasks that I enjoy or don't mind doing and focus on them to reduce stress and improve my performance. This has also helped me be more positive even when I don’t want to do something to create a positive work environment. Learning networking concepts has shown me that I enjoy understanding how networking systems work. Understanding the backbone of the network has helped me see how the larger world is interconnected, and how to break down complex systems into smaller parts to better understand how they work together. In networking, there is a lot of problem solving, and working together to find a solution that will not negatively impact the rest of your clients. I learned creative problem-solving techniques such as identifying the issue, troubleshooting, applying temporary fixes, monitoring client impact, and implementing permanent solutions without disrupting productivity or taking the network down. Not every problem is the same, taking this class helped me fine tune my problem-solving skills.
-            </p>
-        </section>
+        <section class="exp" id="guess-game-section">
+          <h1>Guess the Number Game</h1>
+          <p>Guess a number between 1 and 10</p>
+          <input type="number" id="guessInput" min="1" max="10" />
+          <button onclick="checkGuess()">Submit Guess</button>
+          <p id="message"></p>
 
-        <a href="#top">Back to Top</a>
+          <script src="robert.js"></script>
+        </section>
+        <section class="exp" id="tic-tac-toe-section">
+          <div class="container">
+            <h1>Tic Tac Toe</h1>
+            <div id="board" class="board"></div>
+            <div id="status" class="status">Player X's turn</div>
+          </div>
+          <script src="robert-tictac.js"></script>
+        </section>
+        <section>
+          <a href="#top">Back to Top</a>
+          <section>
+            <footer>&copy; Robert's-Page 2023</footer>
+          </section>
+        </section>
+      </section>
     </main>
-
-    <footer>
-        &copy; Robert's-Page 2023
-    </footer>
-</body>
-
+  </body>
 </html>
